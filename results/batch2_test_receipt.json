@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-01T14:26:31.354016+09:00",
+  "status": "completed",
+  "test_batch": "Batch2",
+  "test_n": 39,
+  "prediction_calls": 1,
+  "model_sha256": "6d0ef6092346c9ed2431f1a2571475b783a8541498e52e2a4e10dd31700f02d9",
+  "freeze_sha256": "b6a3d73b8db6b99d36d96fbfdbeab3cbf3ea0fc4f6b509fa73384cec6411260e",
+  "completed_at": "2026-10-01T14:26:31.372826+09:00",
+  "metrics": {
+    "MAPE_percent": 32.82752253797419,
+    "RMSE_cycles": 169.84549535081587,
+    "R2": 0.4003544738347298
+  }
+}

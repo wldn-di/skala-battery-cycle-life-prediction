@@ -1,0 +1,50 @@
+{
+  "model_features": [
+    "log_var_delta_Q",
+    "mean_QD",
+    "std_QD",
+    "mean_IR",
+    "mean_Tavg",
+    "mean_Tmax",
+    "mean_chargetime",
+    "delta_QD_100_10"
+  ],
+  "candidate_features": [
+    "log_var_delta_Q",
+    "mean_QD",
+    "std_QD",
+    "mean_IR",
+    "mean_Tavg",
+    "mean_Tmax",
+    "mean_chargetime",
+    "delta_QD_100_10"
+  ],
+  "charging_ablation": [
+    "C1",
+    "C2",
+    "switch_pct"
+  ],
+  "not_model_inputs": [
+    "batch",
+    "cell_id",
+    "source_cell_index",
+    "charging_policy",
+    "cycle_life",
+    "target_available",
+    "feature_min_cycle",
+    "feature_max_cycle"
+  ],
+  "excluded_future_columns": [
+    "n_recorded_cycles",
+    "last_recorded_cycle",
+    "first_valid_QD",
+    "last_valid_QD",
+    "endpoint_change_pct"
+  ],
+  "summary_feature_window": "original Cycle2–100; 99 cycles; nonpositive/nonfinite values missing",
+  "delta_feature_definition": "log10(population variance of Qdlin100-Qdlin10), ddof=0",
+  "delta_QD_definition": "summary QDischarge Cycle100 minus Cycle10",
+  "std_QD_ddof": 1,
+  "target": "provided cycle_life",
+  "fit_scope": "Batch1 Train34 and training-only CV folds"
+}

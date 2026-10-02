@@ -1,0 +1,9 @@
+step,decision,reason
+1,Retain DAY1 definitions,Raw recomputation matches saved output; common 99-cycle window disclosed.
+2,Regression / log target / MAPE,"Positive lifetime and relative-error objective; reversible fixed transform, original-unit scoring."
+3,"Fixed Batch1 Train34/Valid12 split, seed42",Independent Holdout; no split shopping or Batch2/3-driven choices.
+4,Three families and three predefined feature sets,"Core interpretability, Expanded comparison, charging-only ablation; no individual feature search on external batches."
+5,Nested Train CV,Hyperparameters chosen within inner folds; outer scores are not fitted training error.
+6,B_Expanded__RandomForest,"Chosen before Batch2 evaluation: Valid 8.5746%, nested CV 9.4981% ± 2.4806 pp; 8 features. Near-tie simplicity rule applied within fixed tolerances."
+7,Freeze fitted Train34 model before Test,Same fitted model for Holdout and external Test; no fitting on Valid or Batch2.
+8,One-shot external test complete,Batch2 MAPE=32.8275%; no subsequent tuning or retest.
