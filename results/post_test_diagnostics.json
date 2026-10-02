@@ -1,0 +1,10 @@
+{
+  "test_n": 39,
+  "overprediction_n": 35,
+  "mean_signed_error_cycles": 136.7654438411449,
+  "train_target_min": 534.0,
+  "train_target_max": 1190.0,
+  "test_target_below_train_min_n": 30,
+  "test_prediction_min": 595.3251318554463,
+  "test_prediction_max": 997.7141652325768
+}

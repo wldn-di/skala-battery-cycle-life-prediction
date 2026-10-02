@@ -1,0 +1,12 @@
+item,passed,evidence
+DAY1 artifacts and Scratch unchanged,True,SHA256 checks against pre-development snapshot
+Early 100-cycle boundary,True,Raw audit confirms Cycle2–100 + Q10/Q100 only
+One row per recorded battery cell,True,"139 raw records, 129 target-available"
+Batch1-only model development,True,Fixed split; all CV/tuning/selection confined to Batch1
+Preprocessing fit inside training folds,True,"Imputer/scaler in Pipeline, inner tuning inside outer CV"
+Train performance is CV mean,True,"10 nested outer-fold metrics, no fitted training performance"
+Holdout not used for fitting,True,Artifact fit on Train34; Holdout12 used for final candidate selection only
+Core delta feature retained,True,B_Expanded
+Batch2 once after freeze,True,b6a3d73b8db6b99d36d96fbfdbeab3cbf3ea0fc4f6b509fa73384cec6411260e
+Batch3 model evaluation absent,True,No Batch3 prediction/metrics code path
+Metric and gap direction,True,"MAPE percent; Valid-CV, Test-Valid, Test-9.1; gaps in percentage points"

@@ -1,0 +1,9 @@
+check,status,detail
+Cycle2–100 rationale,PASS_WITH_NOTE,"Batch1 Cycle1 has zero summary placeholders and empty Qdlin in all 46 cells. Scratch cells 10/13 show this; Scratch cell 33 still includes Cycle1. Excluding Cycle1 for Batch2/3 is a common-window design choice, not their data defect; window has 99 cycles."
+Delta Q formula,PASS,Q100 minus Q10; aligned 1000-point voltage grid; population variance ddof=0; base-10 log. All 139 match saved DAY1.
+Eight feature recomputation,PASS,"{'log_var_delta_Q': np.float64(4.440892098500626e-16), 'mean_QD': np.float64(4.440892098500626e-16), 'std_QD': np.float64(3.4846257823684113e-16), 'mean_IR': np.float64(9.367506770274758e-17), 'mean_Tavg': np.float64(1.0658141036401503e-14), 'mean_Tmax': np.float64(7.105427357601002e-15), 'mean_chargetime': np.float64(1.4210854715202004e-14), 'delta_QD_100_10': np.float64(9.84455572616838e-17)}"
+Missing target exclusion,PASS,"NaN target retained in 139-row master, excluded only for supervised modeling; B1=46/B2=39/B3=44."
+Feature time boundary,PASS,Summary features use Cycle2–100; capacity difference and discharge curves use original Cycle10/100 only. No post-100 input.
+Preprocessing provenance,PASS_WITH_NOTE,Nonpositive/nonfinite measurements marked missing by fixed DAY1 rule. No full-life df_clean filter used for model features. Early QD spikes retained; std_QD is sensitive. Future imputation/scaling fit only training folds.
+External-test limitations,DISCLOSED,"Batch2/3 already inspected in DAY1. Batch2 is a one-shot external model test, not an untouched blind dataset. No Batch2/3 metrics or correlations may guide model tuning."
+Label and physical identity,DISCLOSED,Provided raw labels retained; not a reconstruction of the published curated labels. Physical-cell identity cannot be certified from Batch+index identifiers. No automatic published merge/delete lists applied.

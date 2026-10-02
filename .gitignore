@@ -10,6 +10,7 @@
 
 !/.gitignore
 !/30-ESSHealth-DAY1.ipynb
+!/30-ESSHealth-DAY2.ipynb
 !/README.md
 !/day2_regression.py
 !/figures/day2_development_comparison.png
@@ -27,6 +28,10 @@
 !/results/batch1_split.csv
 !/results/batch2_test_receipt.json
 !/results/day1_audit.json
+!/results/day1_audit.csv
+!/results/day1_cycle1_audit.csv
+!/results/cell_error_analysis.csv
+!/results/consistency_audit.csv
 !/results/decision_log.csv
 !/results/development_comparison.csv
 !/results/feature_schema.json
@@ -34,6 +39,8 @@
 !/results/model_explanation.csv
 !/results/model_freeze.json
 !/results/model_performance.csv
+!/results/post_test_diagnostics.json
+!/results/post_test_feature_ranges.csv
 !/results/nested_cv_folds.csv
 !/results/test_predictions.csv
 !/results/valid_predictions.csv
